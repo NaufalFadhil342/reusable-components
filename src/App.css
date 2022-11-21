@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  background-color: #f7f7f7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* app */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  width: 100%;
+  height: 100vh;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.app h1 {
+  font-size: x-large;
+  font-weight: 600;
+  color: #0f0f0f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  display: flex;
+  gap: 3rem;
+}
+
+/* profileCard */
+
+.profileCard {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.profileCard .image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.profileCard .image img {
+  position: absolute;
+  top: -1.5rem;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.profileCard .content {
+  padding: 0.5rem 1rem;
+}
+
+.profileCard .content .title p {
+  font-style: oblique;
+}
+
+.profileCard .content .desc p {
+  text-indent: 1.5rem;
+  text-align: justify;
+  margin-bottom: 0.5rem;
 }
